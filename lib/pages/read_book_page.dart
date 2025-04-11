@@ -8,10 +8,10 @@ class ReadBookPage extends StatefulWidget
 
 class _ReadBookPageState extends State<ReadBookPage> with SingleTickerProviderStateMixin
 {
-  AnimationController animationController;
-  ScrollController scrollController;
-  Animation<Color> colorTween1;
-  Animation<Color> colorTween2;
+  late AnimationController animationController;
+  late ScrollController scrollController;
+  late Animation<Color?> colorTween1;
+  late Animation<Color?> colorTween2;
 
   final double statusBarSize = 24.0;
   final double imageSize = 264.0;
@@ -27,7 +27,7 @@ class _ReadBookPageState extends State<ReadBookPage> with SingleTickerProviderSt
     animationController = new AnimationController(duration: new Duration(milliseconds: 500), vsync: this);
     animationController.addListener(() => setState(() {}));
 
-    colorTween1 = new ColorTween
+    colorTween1 =  ColorTween
     (
       begin: Colors.black12,
       end: new Color(0xFF0018C8)

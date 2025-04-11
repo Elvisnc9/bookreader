@@ -1,5 +1,14 @@
 name: deisgn_better
 description: A new Flutter project.
+publish_to: 'none'
+
+
+
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.5.4
+
 
 dependencies:
   flutter:
@@ -7,7 +16,7 @@ dependencies:
 
   # The following adds the Cupertino Icons font to your application.
   # Use with the CupertinoIcons class for iOS style icons.
-  cupertino_icons: ^0.1.0
+  cupertino_icons: 
 
 dev_dependencies:
   flutter_test:
@@ -16,6 +25,7 @@ dev_dependencies:
 
 # For information on the generic Dart part of this file, see the
 # following page: https://www.dartlang.org/tools/pub/pubspec
+flutter_lints: ^4.0.0
 
 # The following section is specific to Flutter.
 flutter:

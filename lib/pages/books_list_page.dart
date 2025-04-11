@@ -1,8 +1,7 @@
 import 'package:flutter/material.dart';
 import 'read_book_page.dart';
 
-class BooksListPage extends StatefulWidget
-{
+class BooksListPage extends StatefulWidget{
   @override
   _BooksListPageState createState() => new _BooksListPageState();
 }
